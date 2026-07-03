@@ -54,7 +54,7 @@ Tag quality will matter — worth deciding later whether tags are artist-submitt
 - No user accounts, no self-serve artist profiles, no tags/search yet.
 - Structure:
   - Homepage — latest features/crates, short and opinionated
-  - Individual "crate" pages — a handful of tracks/artists grouped around a theme, mood, or thread, linking out to wherever the music lives
+  - Individual "crate" pages — a handful of albums/artists grouped around a theme or thread, linking out to wherever the music lives
   - "About / who's curating this" page — trust in the curator's ear is the core value proposition in this scene
   - Lightweight analytics to track actual return visits
 - Optional: simple "notify me of new posts" email opt-in, as a lightweight on-ramp — not the whole product.
