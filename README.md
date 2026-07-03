@@ -30,4 +30,4 @@ js/main.js                 Placeholder for future interactivity
 
 ## Email
 
-`you@echo-shell.net` is referenced as a placeholder in `about.html` and the footer — replace with your actual forwarding/inbox address once set up.
+`contact@echo-shell.net` (referenced in `about.html` and the footer) forwards to a Gmail inbox via GoDaddy Email Forwarding.
