@@ -5,19 +5,21 @@ Phase 1 site: a hand-curated, platform-agnostic guide to drone, ambient, and ele
 ## Structure
 
 ```
-index.html              Homepage — lists published crates
-about.html               About / curator / contact info
+index.html                       Homepage — lists published crates
+about/index.html                  About / curator / contact info
 crates/
-  template-crate.html    Duplicate this for every new crate
-css/style.css             All styling (design tokens at the top)
-js/main.js                 Placeholder for future interactivity
+  template-crate/index.html       Duplicate this for every new crate
+css/style.css                      All styling (design tokens at the top)
+js/main.js                          Placeholder for future interactivity
 ```
+
+Every page lives in its own folder as `index.html` (e.g. `about/index.html`) so URLs are extension-less (`echo-shell.net/about/` rather than `/about.html`). All internal links use root-relative paths (`/about/`, `/css/style.css`) so this works regardless of nesting depth.
 
 ## Publishing a new crate
 
-1. Copy `crates/template-crate.html` to `crates/your-crate-slug.html`.
-2. Replace every `[bracketed placeholder]` — title, description, tracks, links.
-3. Add a `.crate-row` entry to the "Crates" section of `index.html` (a commented example is already there) linking to your new file, and update the `count` in the section heading.
+1. Copy `crates/template-crate/` to `crates/your-crate-slug/` (keep the file named `index.html` inside it).
+2. Replace every `[bracketed placeholder]` — title, description, albums, links.
+3. Add a `.crate-row` entry to the "Crates" section of `index.html` (a commented example is already there) linking to `/crates/your-crate-slug/`, and update the `count` in the section heading.
 4. Commit and push — GitHub Pages redeploys automatically.
 
 ## Deploying to GitHub Pages
